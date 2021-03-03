@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -20,5 +22,13 @@ public class PlayerMovement : MonoBehaviour
         float rotateZ = Input.GetAxis("Horizontal");
         transform.Rotate(0,0, rotateZ * rotationSpeed, Space.Self);
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Finish"))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }
