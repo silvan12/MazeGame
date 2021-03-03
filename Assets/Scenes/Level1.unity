@@ -6687,12 +6687,17 @@ PrefabInstance:
     - target: {fileID: 678898381554208142, guid: 67d6386c656f3064faeba3f32739fd92,
         type: 3}
       propertyPath: m_Mass
-      value: 9.43
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 678898381554208142, guid: 67d6386c656f3064faeba3f32739fd92,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 678898381554208142, guid: 67d6386c656f3064faeba3f32739fd92,
         type: 3}
       propertyPath: m_AngularDrag
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 678898381554208142, guid: 67d6386c656f3064faeba3f32739fd92,
         type: 3}
@@ -6702,7 +6707,12 @@ PrefabInstance:
     - target: {fileID: 678898381554208143, guid: 67d6386c656f3064faeba3f32739fd92,
         type: 3}
       propertyPath: moveSpeed
-      value: 30.2
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 678898381554208143, guid: 67d6386c656f3064faeba3f32739fd92,
+        type: 3}
+      propertyPath: rotationSpeed
+      value: -2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 678898381554208136, guid: 67d6386c656f3064faeba3f32739fd92, type: 3}
